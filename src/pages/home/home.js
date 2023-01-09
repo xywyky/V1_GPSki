@@ -1,11 +1,18 @@
-import React from "react";
-import { Text, View } from 'react-native'
+import React, {Component} from "react";
+import {SafeAreaView, StyleSheet, StatusBar, View, Text} from 'react-native';
 
+
+function MobileLayout(props) {
+    return null;
+}
 
 const HomePage = ({ navigation }) => {
-    return (
-        <Text>Home</Text>
-    )
+        return (
+            <MobileLayout credentials={credentials} navigation={navigation}>
+
+            </MobileLayout>
+        )
 }
 
 export default HomePage
+

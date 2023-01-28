@@ -39,7 +39,7 @@ const HomePage = ({ navigation }) => {
                     )}
                 </View>
                 )}
-                <View style={{
+                { !showLegendeModal &&(<View style={{
                     position: 'absolute',
                     bottom: 70,
                     right: 10,
@@ -52,6 +52,7 @@ const HomePage = ({ navigation }) => {
                         }
                     )}
                 </View>
+                )}
             </MobileLayout>
 
         )

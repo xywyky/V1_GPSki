@@ -17,13 +17,13 @@ export class ButtonFactory {
       .build()
   }
 
-  createTextButton(text, onClick, backgroundColor) {
+  createTextButton(text, onClick, backgroundColor, color) {
     return new ButtonBuilder()
       .withLabel(text)
       .withOnClick(onClick)
       .setFullWidth()
       .setBackgroundColor(backgroundColor || "#61E5F8")
-      .setLabelColor("#fff")
+      .setLabelColor(color || "#fff")
       .setFontSize(20)
       .setBorderRadius(3)
       .build()

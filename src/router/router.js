@@ -1,5 +1,6 @@
 import HomePage from "../pages/home/home";
 import LoginPage from "../pages/login/login";
+import InformationPage from "../pages/information/information";
 import { NavigationContainer } from '@react-navigation/native';
 import ProfilePage from "../pages/profile/profile";
 import React from 'react'
@@ -38,6 +39,12 @@ const Router = () => {
         <Stack.Screen
           name={routes.profile}
           component={ProfilePage}
+        />
+
+
+        <Stack.Screen
+            name={routes.information}
+            component={InformationPage}
         />
 
 

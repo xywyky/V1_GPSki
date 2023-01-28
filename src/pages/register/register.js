@@ -78,7 +78,7 @@ const RegisterPage = ({ navigation }) => {
                     {buttonFactory.createSubmitButton(
                         "Creer un compte",
                         () => {
-                            navigation.navigate(routes.login);
+                            navigation.navigate(routes.information);
                         }
                     )}
                 </View>

@@ -3,7 +3,7 @@ import { View, Text, Image } from 'react-native';
 import { styles } from "./start.style";
 import  logo  from '../../../assets/img.png'
 import {routes} from "../../router";
-import { ButtonFactory} from "../../components ";
+import { ButtonFactory} from "../../components";
 
 const StartPage = ({ navigation }) => {
 

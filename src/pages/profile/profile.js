@@ -1,6 +1,5 @@
 import {ImageBackground, View} from "react-native";
 import React from "react";
-import {styles} from "./profile.style";
 import {Text } from "react-native";
 
 

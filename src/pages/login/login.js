@@ -1,6 +1,6 @@
 import { Text, TextInput, View } from 'react-native'
 
-import { ButtonFactory} from "../../components ";
+import { ButtonFactory} from "../../components";
 import React from 'react'
 import { routes } from '../../router/routes';
 import { styles } from './login.style';

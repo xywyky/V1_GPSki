@@ -1,4 +1,4 @@
-import { Navigation } from '../../components '
+import { Navigation } from '../../components'
 import React from 'react'
 import { View } from 'react-native'
 import { styles } from './mobile.style';

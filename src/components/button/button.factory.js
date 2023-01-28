@@ -1,6 +1,5 @@
 import { ButtonBuilder } from "./button.builder"
 import Close from "../../../assets/close.svg"
-import Dart from "../../../assets/angleDeLaFlecheDroite.svg"
 
 export class ButtonFactory {
   constructor() {}

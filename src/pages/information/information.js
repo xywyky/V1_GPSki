@@ -3,7 +3,7 @@ import {View, Text, ImageBackground, TextInput} from 'react-native';
 
 import { routes } from  '../../router/routes';
 import {styles} from "./information.style";
-import { ButtonFactory } from '../../components /button/button.factory';
+import { ButtonFactory } from '../../components/button/button.factory';
 import {useInformation} from "./information.logic";
 
 

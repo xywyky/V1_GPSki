@@ -42,11 +42,11 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: 'row',
-        marginTop: "130%",
     },
     buttonContainer: {
         width: "40%",
         marginLeft: 10,
         flex: 1,
+        justifyContent: 'flex-end'
     }
 });

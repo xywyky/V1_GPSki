@@ -2,7 +2,7 @@ import React from "react";
 import {View, Text, ImageBackground} from 'react-native';
 import { styles } from "./home.style";
 import { routes } from  '../../router/routes';
-import {ButtonFactory, LegendeModal} from "../../components ";
+import {ButtonFactory, LegendeModal} from "../../components";
 import { MobileLayout } from '../../layout'
 import { carte } from '../../../assets/carte_base.png'
 import { useToggle } from '../../hooks/useToggle';

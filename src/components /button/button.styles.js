@@ -5,6 +5,8 @@ export const styles = StyleSheet.create({
     padding: 8,
     justifyContent: "center",
     alignItems: "center"
+
+
   },
   buttonText: {
     paddingVertical: 4,

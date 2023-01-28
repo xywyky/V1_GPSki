@@ -61,8 +61,8 @@ const LoginPage = ({ navigation }) => {
                 </View>
             </View>
 
-
-                <View style={{ width: "40%", marginLeft: 10 }}>
+            <View style={styles.container}>
+                <View style={styles.buttonContainer}>
                     {buttonFactory.createSubmitButton(
                         "Sign In",
                         () => {
@@ -70,6 +70,15 @@ const LoginPage = ({ navigation }) => {
                         }
                     )}
                 </View>
+                <View style={styles.buttonContainer}>
+                    {buttonFactory.createSubmitButton(
+                        "Register",
+                        () => {
+                            navigation.navigate(routes.register);
+                        }
+                    )}
+                </View>
+            </View>
         </View>
     )
 }

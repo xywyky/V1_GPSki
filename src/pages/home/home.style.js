@@ -37,4 +37,9 @@ export const styles = StyleSheet.create({
         width: "80%",
         fontSize: 17,
     },
+    image: {
+        height: '100%',
+        width: '100%',//c'est moche à changer mais ca marche
+
+    }
 });

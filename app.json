@@ -1,4 +1,5 @@
 {
+
   "expo": {
     "name": "v1app",
     "slug": "v1app",
@@ -18,24 +19,20 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.xywyky.v1app"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.xywyky.v1app"
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "4214a1a2-4fa9-4af1-8ec4-bd8130cf214d"
-      }
-    },
-    "owner": "xywyky"
+    }
   }
 }
+
+
+
+

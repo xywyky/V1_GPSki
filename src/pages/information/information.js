@@ -1,5 +1,5 @@
 import React from 'react'
-import {View, Text, ImageBackground, TextInput} from 'react-native';
+import {View, Text, ImageBackground, TextInput, Image} from 'react-native';
 
 import { routes } from  '../../router/routes';
 import {styles} from "./information.style";
@@ -25,7 +25,12 @@ const InformationPage = ({ navigation }) => {
     return (
 
         <View style={styles.container}>
-            <Text style={styles.title}> Information Page</Text>
+            <Image style={{
+
+                width: 100,
+                height: 100,
+                marginTop: 20,
+            }} source={require('../../../assets/img.png')}/>
 
             <TextInput
                 onChangeText={setNom}
@@ -41,43 +46,36 @@ const InformationPage = ({ navigation }) => {
                 placeholder="Prenom"
             />
 
+            <View style={styles.back}>
+
+                <Text style={styles.title2}> Select your level </Text>
+                <View style={styles.containerLigne}>
+                    <View style={styles.containerColonne}>
+                        <Image style={styles.image} source={require('../../../assets/beginner.png')}/>
+                        <Text style={styles.textb} > Beginner </Text>
+
+                    </View>
+                    <View style={styles.containerColonne}>
+                            <Image style={styles.image} source={require('../../../assets/intermedier.png')}/>
+                        <Text style={styles.textb} > Intermediate </Text>
+                    </View>
+                </View>
+                <View style={styles.containerColonne2}>
+                    <Image style={styles.image} source={require('../../../assets/expert.png')}/>
+                    <Text style={styles.textb}> Expert </Text>
+
+                </View>
+            </View>
+
 
             {buttonFactory.createTextButton(
-                 "Retour",
+                "Valider",
                 () => navigation.navigate(routes.home),
                 "white",
                 "black"
 
-                )
-            }
-
-            {buttonFactory.createTextButton(
-                "novice",
-                () => navigation.navigate(routes.home),
-                "green"
             )
             }
-            {buttonFactory.createTextButton(
-                "amateur",
-                () => navigation.navigate(routes.home),
-                "blue"
-            )
-            }
-            {buttonFactory.createTextButton(
-                "confirmé",
-                () => navigation.navigate(routes.home),
-                "red"
-            )
-            }
-
-            {buttonFactory.createTextButton(
-                "expert",
-                () => navigation.navigate(routes.home),
-                "black"
-            )
-            }
-
-
         </View>
     )
 

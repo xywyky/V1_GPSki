@@ -40,6 +40,17 @@ export const styles = StyleSheet.create({
     image: {
         height: '100%',
         width: '100%',//c'est moche à changer mais ca marche
+    },
+
+    stylePressable: {
+        right: 10,
+        top: 60,
+        position : 'absolute',
+    },
+    styleprofile :{
+        width: 40,
+        height: 40,
+
 
     }
 });

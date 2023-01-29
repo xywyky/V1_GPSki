@@ -28,6 +28,14 @@ export class ButtonFactory {
       .build()
   }
 
+  createImageButton(onClick,image) {
+    return new ButtonBuilder()
+        .withOnClick(onClick)
+        .withIcon(image)
+        .setFullWidth()
+        .build()
+  }
+
   createButtonDart(onClick){
     return new ButtonBuilder()
         .withOnClick(onClick)

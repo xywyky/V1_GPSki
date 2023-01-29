@@ -1,5 +1,5 @@
 import React from "react";
-import {View, Text, ImageBackground} from 'react-native';
+import {View, Image, Text, ImageBackground, Button, Pressable} from 'react-native';
 import { styles } from "./home.style";
 import { routes } from  '../../router/routes';
 import {ButtonFactory, LegendeModal} from "../../components";
@@ -22,10 +22,20 @@ const HomePage = ({ navigation }) => {
                     </ImageBackground>
 
             </View>
+                {(
+                    <Pressable style={styles.stylePressable} onPress={() => navigation.navigate(routes.profile)}>
+
+                        <Image  style={styles.styleprofile} source={require('../../../assets/profile-user.png')}/>
+
+                    </Pressable>
+
+                )}
+
                 {showLegendeModal && (
                     <LegendeModal
                         onClose={() => setShowLegendeModal(false)}/>)
                 }
+
 
                 { !showLegendeModal &&( <View style={{
                     position: 'absolute',
@@ -53,6 +63,7 @@ const HomePage = ({ navigation }) => {
                     )}
                 </View>
                 )}
+
             </MobileLayout>
 
         )

@@ -17,7 +17,7 @@ const HomePage = ({ navigation }) => {
 
             <MobileLayout navigation={navigation}>
             <View style={styles.homePageContainer}>
-                <ImageBackground source={require ('../../../assets/carte_base.png')}  style={styles.image}>
+                <ImageBackground source={require ('../../../assets/faux_carte.jpeg')}  style={styles.image}>
 
                     </ImageBackground>
 
@@ -39,7 +39,7 @@ const HomePage = ({ navigation }) => {
 
                 { !showLegendeModal &&( <View style={{
                     position: 'absolute',
-                    bottom: 130,
+                    bottom: 60,
                     right: 10,
                     zIndex: 2
                 }}>
@@ -51,7 +51,7 @@ const HomePage = ({ navigation }) => {
                 )}
                 { !showLegendeModal &&(<View style={{
                     position: 'absolute',
-                    bottom: 70,
+                    bottom: 10,
                     right: 10,
                     zIndex: 2
                 }}>

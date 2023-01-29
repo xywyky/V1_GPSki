@@ -4,22 +4,22 @@ import React from "react";
 export const navigationConfig = {
   items: [
     {
-      icon : require('../../../assets/favicon.png'),
-      label: "Profile",
+      icon : require('../../../assets/maga.png'),
+      label: "Partner",
       to: routes.profile
     },
     {
-      icon : require('../../../assets/favicon.png'),
-      label: "Home",
+      icon : require('../../../assets/map_2.png'),
+      label: "Map",
       to: routes.home,
     },
     {
-      icon : require('../../../assets/favicon.png'),
-      label: "Login",
+      icon : require('../../../assets/care_2.png'),
+      label: "Warn",
       to: routes.login
     },
     {
-      icon : require('../../../assets/favicon.png'),
+      icon : require('../../../assets/Buy.png'),
       label: "Register",
       to: routes.register
     }

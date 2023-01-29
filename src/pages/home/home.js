@@ -2,6 +2,7 @@ import React from "react";
 import {View, Image, Text, ImageBackground, Button, Pressable} from 'react-native';
 import { styles } from "./home.style";
 import { routes } from  '../../router/routes';
+
 import {ButtonFactory, LegendeModal, ListePisteModal} from "../../components";
 import { MobileLayout } from '../../layout'
 import { carte } from '../../../assets/carte_base.png'
@@ -15,6 +16,7 @@ const HomePage = ({ navigation }) => {
     const [showListePisteModal, setShowListePisteModal] = useToggle();
 
 
+    const [search, setSearch] = React.useState('');
     return (
 
             <MobileLayout navigation={navigation}>
@@ -24,6 +26,7 @@ const HomePage = ({ navigation }) => {
                     </ImageBackground>
 
             </View>
+
                 {(
                     <Pressable style={styles.stylePressable} onPress={() => navigation.navigate(routes.profile)}>
 

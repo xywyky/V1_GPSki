@@ -2,7 +2,7 @@ import React from "react";
 import {View, Image, Text, ImageBackground, Button, Pressable} from 'react-native';
 import { styles } from "./home.style";
 import { routes } from  '../../router/routes';
-import {ButtonFactory, LegendeModal} from "../../components";
+import {ButtonFactory, LegendeModal, ListePisteModal} from "../../components";
 import { MobileLayout } from '../../layout'
 import { carte } from '../../../assets/carte_base.png'
 import { useToggle } from '../../hooks/useToggle';
@@ -12,6 +12,8 @@ const HomePage = ({ navigation }) => {
     const buttonFactory = new ButtonFactory();
 
     const [showLegendeModal, setShowLegendeModal] = useToggle();
+    const [showListePisteModal, setShowListePisteModal] = useToggle();
+
 
     return (
 
@@ -36,8 +38,14 @@ const HomePage = ({ navigation }) => {
                         onClose={() => setShowLegendeModal(false)}/>)
                 }
 
+                {showListePisteModal && (
+                    <ListePisteModal
+                        onClose={() => setShowListePisteModal(false)}/>)
+                }
 
-                { !showLegendeModal &&( <View style={{
+
+
+                { !showLegendeModal && !showListePisteModal &&( <View style={{
                     position: 'absolute',
                     bottom: 60,
                     right: 10,
@@ -49,16 +57,15 @@ const HomePage = ({ navigation }) => {
                     )}
                 </View>
                 )}
-                { !showLegendeModal &&(<View style={{
+                { !showListePisteModal && !showLegendeModal &&(<View style={{
                     position: 'absolute',
                     bottom: 10,
                     right: 10,
                     zIndex: 2
                 }}>
                     {buttonFactory.createSubmitButton(
-                        "Je sais pas pour le moment",
-                        () => {
-                            navigation.navigate(routes.register);
+                        "Liste des pistes",
+                        () => { setShowListePisteModal(true)
                         }
                     )}
                 </View>

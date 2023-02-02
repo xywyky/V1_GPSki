@@ -7,11 +7,11 @@ import React from 'react'
 import RegisterPage from "../pages/register/register";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { routes } from './routes';
-import {StartPage} from "../pages";
+import {StartPage, StationPage} from "../pages";
 
 const Stack = createNativeStackNavigator();
 
-const Router = () => {  
+const Router = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
@@ -35,7 +35,7 @@ const Router = () => {
           name={routes.register}
           component={RegisterPage}
         />
-        
+
         <Stack.Screen
           name={routes.profile}
           component={ProfilePage}
@@ -45,6 +45,11 @@ const Router = () => {
         <Stack.Screen
             name={routes.information}
             component={InformationPage}
+        />
+
+        <Stack.Screen
+            name={routes.station}
+            component={StationPage}
         />
 
 

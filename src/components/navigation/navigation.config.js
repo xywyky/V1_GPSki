@@ -16,7 +16,7 @@ export const navigationConfig = {
     {
       icon : require('../../../assets/care_2.png'),
       label: "Warn",
-      to: routes.login
+      to: routes.station
     },
     {
       icon : require('../../../assets/Buy.png'),

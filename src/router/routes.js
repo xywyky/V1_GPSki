@@ -5,4 +5,5 @@ export const routes = {
   profile: "profile",
   start: "start",
   information: "information",
+  station: "station",
 }

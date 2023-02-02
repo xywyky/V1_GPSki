@@ -7,6 +7,7 @@ import { ButtonFactory} from "../../components";
 
 const StartPage = ({ navigation }) => {
 
+
     const buttonFactory = new ButtonFactory();
     return (
 

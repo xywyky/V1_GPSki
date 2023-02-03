@@ -14,8 +14,12 @@ export const styles = StyleSheet.create({
     },
     loginInputContainer: {
         width: "100%",
-        marginTop: 20,
         justifyContent: "space-evenly"
+    },
+    loginInputContainerTop: {
+        width: "100%",
+        justifyContent: "space-evenly",
+        marginBottom: 17,
     },
     loginInputLabel: {
         fontSize: 16,
@@ -23,19 +27,18 @@ export const styles = StyleSheet.create({
     },
     loginInputBox: {
         width: '85%',
-        padding: '10%',
+        paddingLeft: '10%',
+        paddingRight: '10%',
         fontSize: 16,
-
     },
     colorizedText: {
         fontWeight: "bold",
-        paddingTop: 10,
+        paddingTop: 5,
         fontSize: 16,
         color: "#181D2D",
 
     },
     colorizedText2: {
-        paddingTop: 10,
         fontSize: 16,
         color: "#AAAAAA",
     },
@@ -58,16 +61,15 @@ export const styles = StyleSheet.create({
     line: {
         alignItems: 'center',
         width: "100%",
-        marginTop: -35,
+        marginTop: 2,
+        marginBottom: '6%',
     },
     ContainerTextInput: {
-        paddingBottom: 10,
         flexDirection: 'row',
         alignItems: 'center',
     },
 
     ContainerTextInput2: {
-
         paddingBottom: 40,
         flexDirection: 'row',
     },
@@ -84,8 +86,13 @@ export const styles = StyleSheet.create({
     },
 
     textStyle: {
-        paddingTop: 10,
+        paddingTop: "1%",
     },
+
+    textStyleCGU: {
+        paddingTop: "1%",
+    },
+
     stylePressable: {
         height: 50,
         width: 50,

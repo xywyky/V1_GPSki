@@ -21,8 +21,6 @@ const LoginPage = ({ navigation }) => {
         <View style={styles.loginPageContainer}>
             <View style={styles.topContentContainer}>
 
-
-
                 <View style={styles.loginInputContainer}>
 
                     <Text style={{

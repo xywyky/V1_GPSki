@@ -25,7 +25,7 @@ const RegisterPage = ({ navigation }) => {
 
 
 
-                <View style={styles.loginInputContainer}>
+                <View style={styles.loginInputContainerTop}>
 
                     <Text style={{
                         ...styles.colorizedText,

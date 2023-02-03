@@ -22,7 +22,8 @@ export const styles = StyleSheet.create({
     },
     loginInputBox: {
         width: '85%',
-        padding: '10%',
+        paddingLeft: '10%',
+        paddingRight: '10%',
         fontSize: 16,
 
     },
@@ -56,19 +57,20 @@ export const styles = StyleSheet.create({
     line: {
         alignItems: 'center',
         width: "100%",
-        marginTop: -10,
+        marginTop: 0,
     },
     ContainerTextInput: {
+        paddingTop: 20,
         paddingBottom: 10,
         flexDirection: 'row',
         alignItems: 'center',
     },
 
     ContainerTextInput2: {
-
         paddingBottom: 100,
         flexDirection: 'row',
     },
+
     line_V: {
         marginLeft: 10,
     },

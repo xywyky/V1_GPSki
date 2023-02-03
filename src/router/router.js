@@ -8,6 +8,7 @@ import RegisterPage from "../pages/register/register";
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { routes } from './routes';
 import {StartPage, StationPage} from "../pages";
+import MotDePasse from "../pages/motDePasse/motDePasse";
 
 const Stack = createNativeStackNavigator();
 
@@ -50,6 +51,11 @@ const Router = () => {
         <Stack.Screen
             name={routes.station}
             component={StationPage}
+        />
+
+        <Stack.Screen
+            name={routes.motDePasse}
+            component={MotDePasse}
         />
 
 

@@ -33,12 +33,13 @@ export const styles = StyleSheet.create({
     },
     colorizedText: {
         fontWeight: "bold",
-        paddingTop: 5,
+        paddingTop: "10%",
         fontSize: 16,
         color: "#181D2D",
 
     },
     colorizedText2: {
+        paddingTop: "10%",
         fontSize: 16,
         color: "#AAAAAA",
     },
@@ -52,19 +53,20 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
     },
     buttonContainer: {
-        width: "40%",
+
         marginRight: 10,
+        marginTop: "50%",
         flex: 1,
-        justifyContent: 'flex-end',
 
     },
     line: {
         alignItems: 'center',
         width: "100%",
-        marginTop: "1%",
-        marginBottom: '7%',
+        marginTop: 2,
+        marginBottom: '1%',
     },
     ContainerTextInput: {
+        paddingTop: "30%",
         flexDirection: 'row',
         alignItems: 'center',
     },

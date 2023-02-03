@@ -5,3 +5,4 @@ export * from "./register";
 export * from "./start";
 export * from "./information";
 export * from "./station"
+export * from "./motDePasse"

@@ -77,7 +77,9 @@ const LoginPage = ({ navigation }) => {
                 </View>
 
 
-                    <Text style={styles.MDP} onPress={() => alert('page mot de passe oublier')}>
+                    <Text style={styles.MDP} onPress={() => {
+                        navigation.navigate(routes.motDePasse);
+                    }}>
                         Mot de passe oublié ?
                     </Text>
 

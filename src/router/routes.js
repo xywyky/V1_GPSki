@@ -6,4 +6,5 @@ export const routes = {
   start: "start",
   information: "information",
   station: "station",
+  motDePasse: "motDePasse"
 }

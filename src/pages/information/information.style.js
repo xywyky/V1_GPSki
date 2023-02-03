@@ -52,8 +52,8 @@ export const styles = StyleSheet.create({
         textAlign: "center",
     },
     back: {
-        borderTopEndRadius: "50%",
-        borderTopStartRadius: "50%",
+        borderTopRightRadius: "50%",
+        borderTopLeftRadius: "50%",
         height: "50%",
         width: "100%",
         flexDirection: "column",

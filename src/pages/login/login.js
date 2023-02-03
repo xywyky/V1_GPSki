@@ -1,4 +1,4 @@
-import { Text, TextInput, View } from 'react-native'
+import {Text, TextInput, View, Image, Alert} from 'react-native'
 
 import { ButtonFactory} from "../../components";
 import React from 'react'
@@ -41,24 +41,48 @@ const LoginPage = ({ navigation }) => {
                         <Text style={{ color: "red" }}>Invalid credentials</Text>
                     )}
 
-                    <TextInput
-                        onChangeText={setEmail}
-                        style={styles.loginInputBox}
-                        value={email}
-                        placeholder="Adresse e-mail"
-                    />
+                    <View style={styles.ContainerTextInput}>
+
+                        <Image source={require('../../../assets/Message.png')}/>
+                        <Image style={styles.line_V} source={require('../../../assets/Line_deco_v.png')}/>
+                        <TextInput
+                            onChangeText={setEmail}
+                            style={styles.loginInputBox}
+                            value={email}
+                            placeholder="Adresse e-mail"
+                        />
+                    </View>
+                    <Image style={styles.line} source={require('../../../assets/Line_deco.png')}/>
+
+
+
                 </View>
 
                 <View style={styles.loginInputContainer}>
+                    <View style={styles.ContainerTextInput}>
 
-                    <TextInput
-                        style={styles.loginInputBox}
-                        onChangeText={setPassword}
-                        value={password}
-                        placeholder="Mot de passe"
-                        secureTextEntry
-                    />
+                        <Image source={require('../../../assets/mdp.png')}/>
+                        <Image style={styles.line_V} source={require('../../../assets/Line_deco_v.png')}/>
+
+                        <TextInput
+                            style={styles.loginInputBox}
+                            onChangeText={setPassword}
+                            value={password}
+                            placeholder="Mot de passe"
+                            secureTextEntry
+                        />
+
+                        <Image source={require('../../../assets/oeil.png')}/>
+                    </View>
+
+                    <Image style={styles.line} source={require('../../../assets/Line_deco.png')}/>
                 </View>
+
+
+                    <Text style={styles.MDP} onPress={() => alert('page mot de passe oublier')}>
+                        Mot de passe oublié ?
+                    </Text>
+
             </View>
 
             <View style={styles.container}>
@@ -70,14 +94,20 @@ const LoginPage = ({ navigation }) => {
                         }
                     )}
                 </View>
-                <View style={styles.buttonContainer}>
-                    {buttonFactory.createSubmitButton(
-                        "Register",
-                        () => {
-                            navigation.navigate(routes.register);
-                        }
-                    )}
-                </View>
+
+
+            </View>
+            <View style={styles.ContainerTextInput2}>
+                <Text style={{...styles.colorizedText2,
+                    ...styles.textStyle}}
+                >
+                    Nouveau Membre ?
+                </Text>
+                <Text style={{
+                    ...styles.colorizedText,
+                }}
+                      onPress={() => navigation.navigate(routes.register)}
+                > S'inscrire</Text>
             </View>
         </View>
     )

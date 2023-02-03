@@ -1,5 +1,6 @@
 import React from 'react'
-import {View, Text, ImageBackground, TextInput, Image} from 'react-native';
+import {View, Text, Image, Pressable} from 'react-native';
+import { MobileLayout } from '../../layout'
 
 import { routes } from  '../../router/routes';
 import {styles} from "./information.style";
@@ -24,59 +25,57 @@ const InformationPage = ({ navigation }) => {
 
     return (
 
+        <MobileLayout navigation={navigation}>
+
+
         <View style={styles.container}>
-            <Image style={{
+            {/*
+            le bouton profile est un pressable qui fonctionne bizarement
+           */}
 
-                width: 100,
-                height: 100,
-                marginTop: 20,
-            }} source={require('../../../assets/img.png')}/>
+            <View style={styles.containerTop}>
+            <Text style={{
+                ...styles.textd,
+                ...styles.textd_color1
+            }}>Welcome !</Text>
 
-            <TextInput
-                onChangeText={setNom}
-                style={styles.InputBox}
-                value={nom}
-                placeholder="Nom"
-            />
+                <Pressable style={styles.stylePressable} onPress={() => navigation.navigate(routes.profile)}>
 
-            <TextInput
-                onChangeText={setPrenom}
-                style={styles.InputBox}
-                value={prenom}
-                placeholder="Prenom"
-            />
+                    <Image  style={styles.styleprofile} source={require('../../../assets/profile-user.png')}/>
 
+                </Pressable>
+
+            <Text style={{
+                ...styles.textd,
+                ...styles.textd_color2
+            }}>Hugo</Text>
+            </View>
             <View style={styles.back}>
+                <Text style={styles.title2}> Select your level :</Text>
 
-                <Text style={styles.title2}> Select your level </Text>
-                <View style={styles.containerLigne}>
-                    <View style={styles.containerColonne}>
-                        <Image style={styles.image} source={require('../../../assets/beginner.png')}/>
-                        <Text style={styles.textb} > Beginner </Text>
+                <View style={styles.containerTop2}>
+                    <View style={styles.containerLigne}>
+                        <Pressable style={styles.containerColonne} onPress={() => alert("Beginner")}>
 
+                            <Image style={styles.image} source={require('../../../assets/beginner.png')} />
+                            <Text style={styles.textb} > Beginner </Text>
+                        </Pressable>
+                        <Pressable style={styles.containerColonne} onPress={() => alert("Intermediate")}>
+                                <Image style={styles.image} source={require('../../../assets/intermedier.png')}/>
+                            <Text style={styles.textb} > Intermediate </Text>
+                        </Pressable>
                     </View>
-                    <View style={styles.containerColonne}>
-                            <Image style={styles.image} source={require('../../../assets/intermedier.png')}/>
-                        <Text style={styles.textb} > Intermediate </Text>
-                    </View>
-                </View>
-                <View style={styles.containerColonne2}>
-                    <Image style={styles.image} source={require('../../../assets/expert.png')}/>
-                    <Text style={styles.textb}> Expert </Text>
+                    <Pressable style={styles.containerColonne2} onPress={() => alert("Expert")}>
+                        <Image style={styles.image2} source={require('../../../assets/expert.png')}/>
+                        <Text style={styles.textb}> Expert </Text>
 
+                    </Pressable>
                 </View>
             </View>
 
-
-            {buttonFactory.createTextButton(
-                "Valider",
-                () => navigation.navigate(routes.home),
-                "white",
-                "black"
-
-            )
-            }
         </View>
+
+        </MobileLayout>
     )
 
 }

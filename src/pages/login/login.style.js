@@ -36,6 +36,7 @@ export const styles = StyleSheet.create({
     },
     colorizedText2: {
         paddingTop: 10,
+        paddingBottom: "20%",
         fontSize: 16,
         color: "#AAAAAA",
     },

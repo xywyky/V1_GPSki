@@ -4,6 +4,7 @@ import {Text} from "react-native";
 import {styles} from "./station.style";
 import {getStation} from "./station.logic.js";
 import meteo from "../../../assets/station/meteo.png";
+import {MobileLayout} from "../../layout";
 
 
 
@@ -20,6 +21,7 @@ const StationPage = ({ navigation }) => {
         enneigement
     } = getStation();
 return (
+    <MobileLayout navigation={navigation}>
     <View style={styles.loginPageContainer}>
         <View style={styles.topContentContainer}>
             <View style={styles.loginInputContainer}>
@@ -68,6 +70,7 @@ return (
             </View>
         </View>
     </View>
+    </MobileLayout>
 
 
 )

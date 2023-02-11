@@ -1,14 +1,15 @@
+import React from 'react'
+import { routes } from './routes';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {StartPage, StationPage} from "../pages";
+import { NavigationContainer } from '@react-navigation/native';
 import HomePage from "../pages/home/home";
 import LoginPage from "../pages/login/login";
 import InformationPage from "../pages/information/information";
-import { NavigationContainer } from '@react-navigation/native';
 import ProfilePage from "../pages/profile/profile";
-import React from 'react'
 import RegisterPage from "../pages/register/register";
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { routes } from './routes';
-import {StartPage, StationPage} from "../pages";
 import MotDePasse from "../pages/motDePasse/motDePasse";
+import ItineraryPage from "../pages/itinerary/itinerary";
 
 const Stack = createNativeStackNavigator();
 
@@ -56,6 +57,11 @@ const Router = () => {
         <Stack.Screen
             name={routes.motDePasse}
             component={MotDePasse}
+        />
+
+        <Stack.Screen
+            name={routes.itinerary}
+            component={ItineraryPage}
         />
 
 

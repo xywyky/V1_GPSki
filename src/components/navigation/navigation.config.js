@@ -9,9 +9,9 @@ export const navigationConfig = {
       to: routes.profile
     },
     {
-      icon : require('../../../assets/map_2.png'),
-      label: "Map",
-      to: routes.home,
+      icon : require('../../../assets/flag.png'),
+      label: "Itinerary",
+      to: routes.itinerary,
     },
     {
       icon : require('../../../assets/Home2.png'),

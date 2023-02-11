@@ -14,6 +14,13 @@ export const navigationConfig = {
       to: routes.home,
     },
     {
+      icon : require('../../../assets/Home2.png'),
+      label: "",
+      to: routes.home,
+    },
+
+
+    {
       icon : require('../../../assets/care_2.png'),
       label: "Warn",
       to: routes.station
